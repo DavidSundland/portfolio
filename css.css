@@ -186,6 +186,48 @@ section p {
     margin: 20px 0;
 }
 
+figure {
+    display: inline-block;
+}
+
+figure img {
+    height: 100px;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: 600;
+    color: #193661;
+}
+
+
+
+/*
+<figure>
+<img src='http://placehold.it/200x200' alt='missing' />
+<figcaption>Album name goes here
+<br>Year goes here
+<br>artist name goes here</figcaption>
+</figure>
+and apply the following CSS:
+
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px;  adjust as needed
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+*/
+
+
+
+
 footer {
     /*    position: fixed;*/
     background-color: #4b6892;
