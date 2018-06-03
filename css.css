@@ -51,7 +51,7 @@ Is a short set of CSS rules that resets the styling of all HTML elements to a co
     -o-padding-end: 0px;
 }
 
-/* Available fonts:
+/* Available body fonts:
 font-family: 'Open Sans', sans-serif;
 font-family: 'Sunflower', sans-serif;
 font-family: 'Montserrat', sans-serif; **
@@ -63,10 +63,28 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Quicksand', sans-serif; **
 */
 
+/* Available heading (handwritten) fonts:
+font-family: 'Indie Flower', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Handlee', cursive; *
+font-family: 'Kalam', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Shadows Into Light Two', cursive;
+font-family: 'Neucha', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Nothing You Could Do', cursive;
+*/
 
 
 body * {
     font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #cad8db;
 }
 
 nav {
@@ -87,21 +105,38 @@ nav img {
 }
 
 nav ul, nav h2, nav li {
-    display: inline;
+    display: inline-block;
 }
 
-nav li, nav h2, nav ul {
-    padding: 30px;
+nav h2 {
+    padding: 20px;
+    width: 49%;
+}
+
+.nav {
+/*    height: 30px;*/
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    width: 49%;
+}
+
+nav li {
+    padding-left: 30px;
 }
 
 nav h2 {
     padding-left: 80px;  /* logo has fixed position; large left padding for h2 to avoid overlap */
+/*    font-family: 'Indie Flower', cursive;*/
 }
 
 nav h2 {
-    position: absolute;
+    position: relative;
     font-size: 1.6em;
     color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 2.2em;
+/*            font-family: 'Bad Script', cursive;*/
 }
 
 nav li a {
@@ -132,9 +167,17 @@ h1 {
     font-size: 2em;
     position: absolute;
     bottom: 0;
-    text-align: right;
+    text-align: left;
     width: 100%;
     padding: 30px;
+    text-shadow: 3px 3px black;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    background-color: #cad8db;
 }
 
 footer {
