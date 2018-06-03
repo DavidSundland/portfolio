@@ -81,6 +81,8 @@ font-family: 'Nothing You Could Do', cursive;
 
 body * {
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 body {
@@ -101,7 +103,7 @@ nav img {
     height: 60px;
 /*    padding: 5px;*/
     position: fixed;
-    top: 10px;
+    top: 20px;
 }
 
 nav ul, nav h2, nav li {
@@ -135,7 +137,7 @@ nav h2 {
     font-size: 1.6em;
     color: white;
     font-family: 'Caveat', cursive;
-    font-size: 2.2em;
+    font-size: 2em;
 /*            font-family: 'Bad Script', cursive;*/
 }
 
@@ -178,6 +180,10 @@ main {
     margin: auto;
     padding: 30px;
     background-color: #cad8db;
+}
+
+section p {
+    margin: 20px 0;
 }
 
 footer {
