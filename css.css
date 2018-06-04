@@ -175,6 +175,11 @@ h1 {
     text-shadow: 3px 3px black;
 }
 
+.standOut {
+    font-size: inherit;
+    color: #B79E3C;
+}
+
 main {
     max-width: 1060px;
     margin: auto;
@@ -186,11 +191,12 @@ main {
 h3 {
     color: #927A1B;
     font-size: 1.4em;
+    margin-bottom: 30px;
 }
 
 section {
     margin: 40px 0;
-    padding: 5px 30px;
+    padding: 30px;
 }
 
 section:nth-child(even) {
@@ -200,7 +206,7 @@ section:nth-child(even) {
 }
 
 section p {
-    margin: 20px 0;
+    margin-bottom: 30px;
 }
 
 figure {
@@ -217,14 +223,21 @@ figcaption {
     color: #193661;
 }
 
-#projects .row {
-    margin: 50px 0;
+#projects .row:not(:last-child) {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 5px ridge #FFC49E;
 }
 
 h4 {
     border-bottom: 3px ridge #FFC49E;
     color: #924A1B;
     font-size: 1.2em;
+}
+
+.projectPic {
+    border: 4px outset #FFC49E;
+    padding: 0;
 }
 
 .project-skills li {
