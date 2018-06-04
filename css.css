@@ -96,7 +96,7 @@ nav {
     padding: 0px 30px;
     top: 0;
 /*    min-height: 71px;  to ensure no gap between nav & hero image */
-    z-index: 1000;
+    z-index: 100;
 }
 
 nav img {
@@ -145,6 +145,31 @@ nav li a {
     text-decoration: none;
     color: white;
 }
+
+.linkOffset {  /* Offset so page jumps aren't hidden by header */
+    margin-top: -100px;        /* Size of fixed header */
+    padding-bottom: 100px;
+    display: block;
+}
+
+/*
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 120px;
+    visibility: hidden;
+    pointer-events: none;
+}
+*/
+/*
+
+section span {
+    margin-top: -100px;         Size of fixed header
+    padding-bottom: 100px;
+    display: block;
+}
+*/
 
 a:hover {
     text-shadow: 1px 1px 1px white;
@@ -217,6 +242,7 @@ main {
     padding-bottom: 30px;
 }
 
+
 h3 {
     color: #927A1B;
     font-size: 1.4em;
@@ -240,6 +266,7 @@ section p {
 
 figure {
     display: inline-block;
+    margin: 0 20px 20px 0;
 }
 
 figure img {
@@ -278,6 +305,11 @@ h4 {
     margin-bottom: 7px;
     border: 2px solid #FFC49E;
 /*    font-family: 'Libre Franklin', sans-serif;*/
+}
+
+.project-skills li:hover {
+    background-color: #A6B7D1;
+    font-weight: 600;
 }
 
 .project-description {
@@ -356,6 +388,37 @@ footer .left {
     display: inline-block;
     text-align: center;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /*    width: 110px;*/
+    background-color: rgba(0,0,0,.8);
+    font-size: .7em;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 11;
+}
+
+.lefttip {
+    width: 80px;
+    bottom: 40px;
+    margin-left: -90px;  /* width + 10px */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 
 footer img {
     height: 50px;

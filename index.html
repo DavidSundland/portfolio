@@ -30,10 +30,10 @@
             <h2>David Sundland</h2>
             <div class="nav">
                 <ul class="nav-buttons">
-                    <li><a href="#" id="nav-about-me">About Me</a></li>
-                    <li><a href="#" id="nav-skills">Skills</a></li>
-                    <li><a href="#" id="nav-projects">Projects</a></li>
-                    <li><a href="#" id="nav-contact">Connect</a></li>
+                    <li><a href="#aboutLink" id="nav-about-me">About Me</a></li>
+                    <li><a href="#skillsLink" id="nav-skills">Skills</a></li>
+                    <li><a href="#projectsLink" id="nav-projects">Projects</a></li>
+                    <li><a href="#contactLink" id="nav-contact">Connect</a></li>
                 </ul>
             </div>
         </nav>
@@ -46,12 +46,14 @@
         <main>
             <div class="innerMain">
                 <section id="aboutMe">
+                    <span id="aboutLink" class="linkOffset"> </span>
                     <h3>About Me</h3>
                     <p>Hello! I’m David, a fullstack web developer and graduate of the Fullstack Web Development Program at Thinkful. As an analytic person who adores problem solving, the coding world presents an exciting world in which to work and play.</p>
 
                     <p>With a background that includes an engineering degree, a first career as a municipal planner, and a second career as a self-employed dog trainer, I can bring unique perspectives to your team...</p>
                 </section>
                 <section id="skills">
+                    <span id="skillsLink" class="linkOffset"> </span>
                     <h3>Skills</h3>
                     <figure>
                         <img src="images/html5.png" alt="HTML5 logo">
@@ -115,6 +117,7 @@
                     </figure>
                 </section>
                 <section id="projects">
+                    <span id="projectsLink" class="linkOffset"> </span>
                     <h3>Projects</h3>
                     <div class="row">
                         <img src="images/mecards.jpg" alt="mE-Cards screenshot" class="col-7 projectPic">
@@ -177,22 +180,27 @@
                     </div>
                 </section>
             </div>
+            <span id="contactLink" class="linkOffset"> </span>
         </main>
 
         <footer role="contentinfo">
             <div class="left">© David Sundland</div>
             <div class="right">
                 <!-- NOTE: using images rather than font-awesome because fa has no CodeWars image -->
-                <span class="spacer">
+                <span class="spacer tooltip">
+                    <span class="tooltiptext lefttip">GitHub</span>
                     <a href="https://github.com/DavidSundland" target="_blank"><img src="images/githubfont.png"></a>
                 </span>
-                <span class="spacer">
+                <span class="spacer tooltip">
+                    <span class="tooltiptext lefttip">LinkedIn</span>
                     <a href="https://www.linkedin.com/in/david-sundland" target="_blank"><img src="images/linkedinfont.png"></a>
                 </span>
-                <span class="spacer">
+                <span class="spacer tooltip">
+                    <span class="tooltiptext lefttip">E-mail</span>
                     <a href="mailto:dsundland@gmail.com"><img src="images/emailfont.png"></a>
                 </span>
-                <span class="spacer">
+                <span class="spacer tooltip">
+                    <span class="tooltiptext lefttip">CodeWars</span>
                     <a href="https://www.codewars.com/users/dsundland" target="_blank"><img src="images/codewarsfont.png" alt="CodeWars icon"></a>
                 </span>
             </div>
