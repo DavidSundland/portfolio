@@ -104,6 +104,7 @@ nav img {
 /*    padding: 5px;*/
     position: fixed;
     top: 20px;
+/*    z-index: 101;  /* higher than nav so that h2 doesn't "cover" image */
 }
 
 nav ul, nav h2, nav li {
@@ -230,7 +231,7 @@ h1 {
 
 main {
     position: relative;
-    top: 500px;
+    top: 440px;
     background-color: #cad8db;
     margin-bottom: 90px; /* show fixed upon full scroll down */
     z-index: 10;  /* hide fixed footer */
@@ -267,6 +268,8 @@ section p {
 figure {
     display: inline-block;
     margin: 0 20px 20px 0;
+    background-color: inherit;
+    opacity: .8;
 }
 
 figure img {
