@@ -33,7 +33,7 @@
                     <li><a href="#aboutLink" id="nav-about-me">About Me</a></li>
                     <li><a href="#skillsLink" id="nav-skills">Skills</a></li>
                     <li><a href="#projectsLink" id="nav-projects">Projects</a></li>
-                    <li><a href="#contactLink" id="nav-contact">Connect</a></li>
+                    <li><a href="#contactLink" id="nav-contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -179,8 +179,8 @@
                         </div>
                     </div>
                 </section>
+                <span id="contactLink" class="linkOffset"> </span>  <!-- scroll to bottom of main to show footer -->
             </div>
-            <span id="contactLink" class="linkOffset"> </span>
         </main>
 
         <footer role="contentinfo">
@@ -188,20 +188,20 @@
             <div class="right">
                 <!-- NOTE: using images rather than font-awesome because fa has no CodeWars image -->
                 <span class="spacer tooltip">
-                    <span class="tooltiptext lefttip">GitHub</span>
-                    <a href="https://github.com/DavidSundland" target="_blank"><img src="images/githubfont.png"></a>
+                    <span class="tooltiptext lefttip" id="github">GitHub</span>
+                    <a href="https://github.com/DavidSundland" target="_blank"><img src="images/githubfont.png" onmouseover='this.src="images/githubfontwhite.png"' onmouseout='this.src="images/githubfont.png"' alt="GitHub icon"></a>
                 </span>
                 <span class="spacer tooltip">
-                    <span class="tooltiptext lefttip">LinkedIn</span>
-                    <a href="https://www.linkedin.com/in/david-sundland" target="_blank"><img src="images/linkedinfont.png"></a>
+                    <span class="tooltiptext lefttip" id="linkedin">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/david-sundland" target="_blank"><img src="images/linkedinfont.png" onmouseover='this.src="images/linkedinfontwhite.png"' onmouseout='this.src="images/linkedinfont.png"' alt="LinkedIn icon"></a>
                 </span>
                 <span class="spacer tooltip">
-                    <span class="tooltiptext lefttip">E-mail</span>
-                    <a href="mailto:dsundland@gmail.com"><img src="images/emailfont.png"></a>
+                    <span class="tooltiptext lefttip" id="email">E-mail</span>
+                    <a href="mailto:dsundland@gmail.com"><img src="images/emailfont.png" onmouseover='this.src="images/emailfontwhite.png"' onmouseout='this.src="images/emailfont.png"' alt="E-mail icon"></a>
                 </span>
                 <span class="spacer tooltip">
-                    <span class="tooltiptext lefttip">CodeWars</span>
-                    <a href="https://www.codewars.com/users/dsundland" target="_blank"><img src="images/codewarsfont.png" alt="CodeWars icon"></a>
+                    <span class="tooltiptext lefttip" id="codewars">CodeWars</span>
+                    <a href="https://www.codewars.com/users/dsundland" target="_blank"><img src="images/codewarsfont.png" onmouseover='this.src="images/codewarsfontwhite.png"' onmouseout='this.src="images/codewarsfont.png"' alt="CodeWars icon"></a>
                 </span>
             </div>
 <!--            <div class="right"><a href="https://github.com/DavidSundland" target="_blank"> <i class="fab fa-github"></i> </a><a href="https://www.linkedin.com/in/david-sundland" target="_blank"><i class="fab fa-linkedin"></i> </a><a href="mailto:dsundland@gmail.com"> <i class="far fa-envelope"></i></div>-->

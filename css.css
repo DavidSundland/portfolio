@@ -294,6 +294,7 @@ h4 {
 .projectPic {
     border: 4px outset #FFC49E;
     padding: 0;
+    opacity: .9;
 }
 
 .project-skills li {
