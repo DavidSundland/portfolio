@@ -181,10 +181,10 @@ main {
     z-index: 10;  /* hide fixed footer */
 }
 
-.innerMain {
-    max-width: 1060px;
+.widthLimiter {
+    max-width: 1100px;
     margin: auto;
-    padding-bottom: 30px;
+/*    padding-bottom: 30px;*/
 }
 
 
@@ -201,7 +201,7 @@ section {
 
 section:nth-child(even) {
     background-color: #c1d4da;
-    box-shadow: 4px 4px 10px #acbfc5;
+/*    box-shadow: 4px 4px 10px #acbfc5;*/
     border-radius: 10px;
 }
 
@@ -226,7 +226,6 @@ section p {
     font-size: inherit;
 }
 
-
 figure {
     display: inline-block;
     margin: 0 20px 20px 0;
@@ -245,8 +244,8 @@ figcaption {
 }
 
 #projects .row:not(:last-child) {
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 70px;
+    padding-bottom: 70px;
     border-bottom: 5px ridge #FFC49E;
 }
 
@@ -280,7 +279,7 @@ h4 {
 }
 
 .project-description {
-    padding-left: 25px;
+    padding-left: 45px;
 }
 
 .project-description a {
@@ -421,10 +420,16 @@ footer img {
     .nav {
         width: 59%;
     }
+    figure {
+        opacity: 1; /* for smaller screens, start w/ full opacity in case no mouse for hover effects */
+    }
+    .projectPic {
+        opacity: 1;
+    }
 }
 
 
-/***** MARK - FLOAT TEXT AROUND PHOTO BELOW CERTAIN WIDTH; OTHER ADJUSTMENTS... ****/
+/***** MARK - INCREASE PADDING BETWEEN DESCRIPTION AND PHOTO, DECREASE SIZE OF FOOTER IMAGES, LOOK AT HEADER AND FOOTER LAYOUT... ****/
 
 
 
