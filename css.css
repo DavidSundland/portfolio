@@ -95,29 +95,29 @@ nav {
     background-color: #4b6892;
     padding: 0px 30px;
     top: 0;
-/*    min-height: 71px;  to ensure no gap between nav & hero image */
     z-index: 100;
 }
 
 nav img {
     height: 60px;
-/*    padding: 5px;*/
     position: fixed;
     top: 20px;
-/*    z-index: 101;  /* higher than nav so that h2 doesn't "cover" image */
 }
 
-nav ul, nav h2, nav li {
+nav ul, nav h1, nav li {
     display: inline-block;
 }
 
-nav h2 {
-    padding: 20px;
+nav h1 {
+    padding: 20px 20px 20px 80px; /* logo has fixed position; large left padding for h2 to avoid overlap */
     width: 49%;
+    position: relative;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
 }
 
 .nav {
-/*    height: 30px;*/
     margin: auto;
     position: relative;
     display: inline-block;
@@ -126,20 +126,6 @@ nav h2 {
 
 nav li {
     padding-left: 30px;
-}
-
-nav h2 {
-    padding-left: 80px;  /* logo has fixed position; large left padding for h2 to avoid overlap */
-/*    font-family: 'Indie Flower', cursive;*/
-}
-
-nav h2 {
-    position: relative;
-    font-size: 1.6em;
-    color: white;
-    font-family: 'Caveat', cursive;
-    font-size: 2em;
-/*            font-family: 'Bad Script', cursive;*/
 }
 
 nav li a {
@@ -153,25 +139,6 @@ nav li a {
     display: block;
 }
 
-/*
-section::before {
-    display: block;
-    content: " ";
-    margin-top: -100px;
-    height: 120px;
-    visibility: hidden;
-    pointer-events: none;
-}
-*/
-/*
-
-section span {
-    margin-top: -100px;         Size of fixed header
-    padding-bottom: 100px;
-    display: block;
-}
-*/
-
 a:hover {
     text-shadow: 1px 1px 1px white;
 }
@@ -181,29 +148,6 @@ nav ul {
     list-style: none;
 }
 
-/*
-header {
-    background: url(images/grand-canyon.jpg) no-repeat top center;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-    margin-top: 70px;
-    position: relative;
-}
-*/
-
-/*
-h1 {
-    color: white;
-    font-size: 2em;
-    position: absolute;
-    bottom: 0;
-    text-align: left;
-    width: 100%;
-    padding: 30px;
-    text-shadow: 3px 3px black;
-}
-*/
 header {
     background: url(images/grand-canyon.jpg) no-repeat top center;
     background-size: cover;
@@ -213,7 +157,7 @@ header {
     position: fixed;
 }
 
-h1 {
+h2 {
     color: white;
     font-size: 2em;
     position: relative;
@@ -226,14 +170,14 @@ h1 {
 
 .standOut {
     font-size: inherit;
-    color: #B79E3C;
+    color: #eeb651;
 }
 
 main {
     position: relative;
     top: 440px;
     background-color: #cad8db;
-    margin-bottom: 90px; /* show fixed upon full scroll down */
+    margin-bottom: 120px; /* show fixed upon full scroll down */
     z-index: 10;  /* hide fixed footer */
 }
 
@@ -246,7 +190,7 @@ main {
 
 h3 {
     color: #927A1B;
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-bottom: 30px;
 }
 
@@ -265,6 +209,24 @@ section p {
     margin-bottom: 30px;
 }
 
+#aboutMe img {
+    border-radius: 40px;
+    border: 6px ridge #FFC49E;
+    padding: 0;
+    margin-left: 30px;
+    width: 300px;
+    float: right;
+}
+
+#aboutMe p {
+    font-size: 1.2em;
+}
+
+#aboutMe a {
+    font-size: inherit;
+}
+
+
 figure {
     display: inline-block;
     margin: 0 20px 20px 0;
@@ -278,7 +240,7 @@ figure img {
 
 figcaption {
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     color: #193661;
 }
 
@@ -307,6 +269,7 @@ h4 {
     padding-left: 6px;
     padding-right: 6px;
     margin-bottom: 7px;
+    background-color: #6580ac;
     border: 2px solid #FFC49E;
 /*    font-family: 'Libre Franklin', sans-serif;*/
 }
@@ -325,7 +288,7 @@ h4 {
     padding-top: 5px;
     padding-bottom: 5px;
     display: inline-block;
-    background-color: #115E4F;
+    background-color: #193b6d;
     color: #F4F3F5;
     margin-top: 10px;
     margin-right: 5px;
@@ -337,39 +300,13 @@ h4 {
 }
 
 
-/*
-<figure>
-<img src='http://placehold.it/200x200' alt='missing' />
-<figcaption>Album name goes here
-<br>Year goes here
-<br>artist name goes here</figcaption>
-</figure>
-and apply the following CSS:
-
-figure {
-    display: inline-block;
-    border: 1px dotted gray;
-    margin: 20px;  adjust as needed
-}
-figure img {
-    vertical-align: top;
-}
-figure figcaption {
-    border: 1px dotted blue;
-    text-align: center;
-}
-*/
-
-
-
-
 footer {
     position: fixed;
     bottom: 0;
     background-color: #4b6892;
     color: white;
     /*    border-top: 10px inset #830e02;*/
-    padding: 10px 0;
+    padding: 25px 30px 15px 30px;
     width: 100%;
     margin-left: 0;
     margin-bottom: 0;
@@ -378,8 +315,23 @@ footer {
 /*    z-index: 40;*/
 }
 
-footer .left {
+footer .left a, footer .right {
+    text-decoration: none;
+    color: white;
     font-size: 1.4em;
+/*
+    vertical-align: middle;
+    display: inline-block;
+*/
+}
+
+footer * {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.left, .right {
+    height: 60px;
 }
 
 .spacer {
@@ -391,6 +343,10 @@ footer .left {
     width: 80px;
     display: inline-block;
     text-align: center;
+}
+
+.spacer:first-child {
+    margin-left: 20px;
 }
 
 .tooltip {
@@ -430,16 +386,78 @@ footer img {
 
 .left {
     float: left;
-    padding: 5px 20px 5px 5%;
+/*    padding: 5px 20px 5px 5%;*/
     /* Mirror image of .right */
     width: 49%;
 }
 
 .right {
     float: right;
-    padding:  5px 5% 5px 20px;
+/*    padding:  5px 5% 5px 20px;*/
     width: 49%;
     text-align: right;
 }
 
 
+/******************************** RESPONSIVE STYLING ********************************************************************************************/
+
+@media only screen and (max-width: 1000px) {
+    nav h2 {
+        font-size: 1.6em;
+    }
+    nav li {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    nav img {
+        display: none;
+    }
+    nav h2 {
+        padding-left: 0px;
+        width: 40%;
+    }
+    .nav {
+        width: 59%;
+    }
+}
+
+
+/***** MARK - FLOAT TEXT AROUND PHOTO BELOW CERTAIN WIDTH; OTHER ADJUSTMENTS... ****/
+
+
+
+@media only screen and (max-width: 730px) {
+    nav h2 {
+        padding-left: 0px;
+        width: 100%;
+/*        width: 40%;*/
+    }
+    .nav {
+        width: 100%;
+        text-align: left;
+/*        float: left;*/
+    }
+    nav ul {
+        float: left;
+    }
+    nav li:first-child {
+/*        margin-left: 0;*/
+        padding-left: 0;
+    }
+}
+
+/*
+nav h2 {
+    padding: 20px;
+    width: 49%;
+}
+
+.nav {
+        height: 30px;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    width: 49%;
+}*/
