@@ -51,6 +51,7 @@ Is a short set of CSS rules that resets the styling of all HTML elements to a co
     -o-padding-end: 0px;
 }
 
+
 /* Available body fonts:
 font-family: 'Open Sans', sans-serif;
 font-family: 'Sunflower', sans-serif;
@@ -110,7 +111,7 @@ nav ul, nav h1, nav li {
 
 nav h1 {
     padding: 20px 20px 20px 80px; /* logo has fixed position; large left padding for h2 to avoid overlap */
-    width: 49%;
+    width: 40%;
     position: relative;
     color: white;
     font-family: 'Caveat', cursive;
@@ -121,7 +122,7 @@ nav h1 {
     margin: auto;
     position: relative;
     display: inline-block;
-    width: 49%;
+    width: 59%;
 }
 
 nav li {
@@ -401,11 +402,14 @@ footer img {
 /******************************** RESPONSIVE STYLING ********************************************************************************************/
 
 @media only screen and (max-width: 1000px) {
-    nav h2 {
+    nav h1 {
         font-size: 1.6em;
     }
     nav li {
         padding-left: 20px;
+    }
+    nav ul {
+        margin-bottom: -5px;
     }
 }
 
@@ -413,12 +417,15 @@ footer img {
     nav img {
         display: none;
     }
-    nav h2 {
+    nav h1 {
         padding-left: 0px;
-        width: 40%;
+/*        width: 40%;*/
+    }
+    nav li a {
+        font-size: .9em;
     }
     .nav {
-        width: 59%;
+/*        width: 59%;*/
     }
     figure {
         opacity: 1; /* for smaller screens, start w/ full opacity in case no mouse for hover effects */
@@ -434,8 +441,9 @@ footer img {
 
 
 @media only screen and (max-width: 730px) {
-    nav h2 {
-        padding-left: 0px;
+    nav h1 {
+        padding: 10px 0px;
+        line-height: 1;
         width: 100%;
 /*        width: 40%;*/
     }
@@ -447,11 +455,51 @@ footer img {
     nav ul {
         float: left;
     }
+    nav li {
+        padding-left: 40px;
+    }
     nav li:first-child {
 /*        margin-left: 0;*/
         padding-left: 0;
     }
 }
+
+@media only screen and (max-width: 500px) {
+/*
+    nav h1 {
+        padding: 10px 0px;
+        line-height: 1;
+        width: 100%;
+                width: 40%;
+    }
+*/
+/*
+    .nav {
+        width: 100%;
+        text-align: left;
+                float: left;
+    }
+*/
+/*
+    nav ul {
+        float: left;
+    }
+*/
+    nav li {
+        padding-left: 20px;
+    }
+
+    nav li a {
+        font-size: .8em;
+    }
+/*
+    nav li:first-child {
+                margin-left: 0;
+        padding-left: 0;
+    }
+*/
+}
+
 
 /*
 nav h2 {
