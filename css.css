@@ -259,6 +259,7 @@ h4 {
 .projectPic {
     border: 4px outset #FFC49E;
     padding: 0;
+    margin-bottom: 30px;
     opacity: .9;
 }
 
@@ -475,11 +476,40 @@ footer img {
     h2 {
         top: 300px; /* push higher - extra space for text wrapping */
     }
+    h3 {
+        font-size: 1.3em;
+    }
+    #aboutMe p {
+        font-size: 1em;
+    }
+    #aboutMe img {
+        width: 50%;
+    }
+    figure img {
+        height: 80px;
+    }
+    .project-skills li {
+        padding: 2px 4px;
+        border-width: 1px;
+        font-size: .9em;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     h2 {
         font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    #aboutMe p {
+        font-size: .9em;
+    }
+    #aboutMe img {
+        margin-left: 20px;
+    }
+    figure img {
+        height: 60px;
     }
 
 /*
