@@ -110,7 +110,7 @@ nav ul, nav h1, nav li {
 }
 
 nav h1 {
-    padding: 20px 20px 20px 80px; /* logo has fixed position; large left padding for h2 to avoid overlap */
+    padding: 20px 20px 20px 80px; /* logo has fixed position; large left padding for h1 to avoid overlap */
     width: 40%;
     position: relative;
     color: white;
@@ -411,6 +411,16 @@ footer img {
     nav ul {
         margin-bottom: -5px;
     }
+    header {
+        height: 400px;
+    }
+    main {
+        top: 360px;
+    }
+    h2 {
+        font-size: 1.8em;
+        top: 380px;
+    }
 }
 
 @media only screen and (max-width: 830px) {
@@ -462,9 +472,16 @@ footer img {
 /*        margin-left: 0;*/
         padding-left: 0;
     }
+    h2 {
+        top: 300px; /* push higher - extra space for text wrapping */
+    }
 }
 
 @media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 1.6em;
+    }
+
 /*
     nav h1 {
         padding: 10px 0px;
