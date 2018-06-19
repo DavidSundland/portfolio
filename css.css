@@ -140,8 +140,9 @@ nav li a {
     display: block;
 }
 
-a:hover {
+a:hover, button:hover {
     text-shadow: 1px 1px 1px white;
+    cursor: grab;
 }
 
 nav ul {
@@ -284,22 +285,25 @@ h4 {
     padding-left: 45px;
 }
 
-.project-description a {
+button {
     text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     display: inline-block;
     background-color: #193b6d;
     color: #F4F3F5;
-    margin-top: 10px;
-    margin-right: 5px;
+    margin: 10px 5px 0 0;
     width: 90px;
     text-align: center;
     border-radius: 4px;
-    box-shadow: 2px 2px gray;
-/*    font-family: 'Libre Franklin', sans-serif;*/
+    box-shadow: 3px 3px gray;
+    cursor: pointer;
 }
 
+button:hover {
+    box-shadow: 2px 2px gray;
+    width: 91px;
+    padding: 4px 0 6px 0;
+}
 
 footer {
     position: fixed;
