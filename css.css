@@ -345,6 +345,10 @@ footer * {
     height: 60px;
 }
 
+.smaller {
+    font-size: .7em;
+}
+
 .spacer {
 /*
     padding-left: 8px;
@@ -382,7 +386,7 @@ footer * {
 
 .lefttip {
     width: 80px;
-    bottom: 40px;
+    bottom: 30px;
     margin-left: -90px;  /* width + 10px */
 }
 
@@ -470,11 +474,16 @@ footer img {
 
 
 @media only screen and (max-width: 730px) {
+    nav img {
+        display: inherit;
+        height: 35px;
+        top: 10px;
+    }
+
     nav h1 {
-        padding: 10px 0px;
+        padding: 10px 0 10px 45px; /* logo has fixed position; large left padding for h1 to avoid overlap */
         line-height: 1;
         width: 100%;
-/*        width: 40%;*/
     }
     .nav {
         width: 100%;
@@ -488,7 +497,6 @@ footer img {
         padding-left: 40px;
     }
     nav li:first-child {
-/*        margin-left: 0;*/
         padding-left: 0;
     }
     h2 {
