@@ -167,7 +167,7 @@ h2 {
     text-align: left;
     width: 100%;
     padding: 30px;
-    text-shadow: 3px 3px black;
+    text-shadow: 3px 3px #555;
 }
 
 .standOut {
