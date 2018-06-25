@@ -191,7 +191,7 @@ main {
 
 
 h3 {
-    color: #927A1B;
+    color: #924A1B;
     font-size: 1.5em;
     margin-bottom: 30px;
 }
@@ -204,7 +204,7 @@ section {
 section:nth-child(even) {
     background-color: #c1d4da;
 /*    box-shadow: 4px 4px 10px #acbfc5;*/
-    border-radius: 10px;
+/*    border-radius: 10px;*/
 }
 
 section p {
@@ -212,12 +212,13 @@ section p {
 }
 
 #aboutMe img {
-    border-radius: 40px;
-    border: 6px ridge #FFC49E;
+    border-radius: 14px;
+    border: 1px solid #333;
     padding: 0;
-    margin-left: 30px;
+    margin-right: 30px;
     width: 300px;
-    float: right;
+    float: left;
+    box-shadow: 3px 3px #aaa;
 }
 
 #aboutMe p {
@@ -226,6 +227,8 @@ section p {
 
 #aboutMe a {
     font-size: inherit;
+    text-decoration: none;
+    color: #4b6892;
 }
 
 figure {
@@ -248,20 +251,22 @@ figcaption {
 #projects .row:not(:last-child) {
     margin-bottom: 70px;
     padding-bottom: 70px;
-    border-bottom: 5px ridge #FFC49E;
+    border-bottom: 5px ridge #888;
 }
 
 h4 {
-    border-bottom: 3px ridge #FFC49E;
+    border-bottom: 3px ridge #888;
     color: #924A1B;
     font-size: 1.2em;
 }
 
 .projectPic {
-    border: 4px outset #FFC49E;
+    border: 2px solid #555;
+    border-radius: 14px;
     padding: 0;
     margin-bottom: 30px;
     opacity: .9;
+    box-shadow: 3px 3px #aaa;
 }
 
 .project-skills li {
@@ -272,7 +277,7 @@ h4 {
     padding-right: 6px;
     margin-bottom: 7px;
     background-color: #6580ac;
-    border: 2px solid #FFC49E;
+    border: 1px solid #333;
 /*    font-family: 'Libre Franklin', sans-serif;*/
 }
 
@@ -294,8 +299,8 @@ button {
     margin: 10px 5px 0 0;
     width: 90px;
     text-align: center;
-    border-radius: 4px;
-    box-shadow: 3px 3px gray;
+    border-radius: 14px;
+    box-shadow: 3px 3px #aaa;
     cursor: pointer;
 }
 
@@ -379,7 +384,7 @@ footer * {
     color: #fff;
     text-align: center;
     padding: 5px 0;
-    border-radius: 6px;
+    border-radius: 14px;
     position: absolute;
     z-index: 11;
 }
