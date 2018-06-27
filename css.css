@@ -234,9 +234,14 @@ section p {
 figure {
     display: inline-block;
     margin: 0 20px 20px 0;
-/*    background-color: inherit;*/
-    background-color: #d5ebf1 !important;
+    background-color: inherit;
+/*    background-color: #d5ebf1;*/
     opacity: .8;
+}
+
+figure:hover {
+    opacity: 1;
+    background-color: aliceblue;
 }
 
 figure img {
@@ -268,6 +273,11 @@ h4 {
     margin-bottom: 30px;
     opacity: .9;
     box-shadow: 3px 3px #aaa;
+}
+
+.projectPic:hover {
+    border: none;
+    opacity: 1;
 }
 
 .project-skills li {
