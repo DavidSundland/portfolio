@@ -19,8 +19,8 @@ The main page:
 ![live site](http://www.fullstackdeveloper.pro/)
 
 
-## Live Site
-A live example of the project can be found at http://www.fullstackdeveloper.pro/
+## Live Site & Prototype
+A live example of the project can be found at http://www.fullstackdeveloper.pro/ and the most current, pre-production edition of the site can be found at https://davidsundland.github.io/portfolio/.
 ![main page](https://raw.githubusercontent.com/DavidSundland/portfolio/master/images/portfolio-screenshot.jpg)
 
 
