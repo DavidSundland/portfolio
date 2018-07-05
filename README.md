@@ -21,7 +21,7 @@ The main page:
 
 ## Live Site
 A live example of the project can be found at http://www.fullstackdeveloper.pro/
-![main page](portfolio/images/portfolio-screenshot.jpg?raw=true)
+![main page](https://raw.githubusercontent.com/DavidSundland/portfolio/master/images/portfolio-screenshot.jpg)
 
 
 ## Functionality
