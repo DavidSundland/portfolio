@@ -1,6 +1,5 @@
 /* color palette: http://paletton.com/#uid=33F0u0kh6rM7cK1c7xMlzm+qcio -- based upon primary color: #4b6892 */
 
-
 /* -------------------------------------
 CSS reset
 Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
@@ -62,13 +61,16 @@ body {
     background-color: #ebf9fc;
 }
 
-.linkOffset {  /* Offset so page jumps aren't hidden by nav bar */
-    margin-top: -100px;        /* Size of nav bar */
+.linkOffset {
+    /* Offset so page jumps aren't hidden by nav bar */
+    margin-top: -100px;
+    /* Size of nav bar */
     padding-bottom: 100px;
     display: block;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
     text-shadow: 1px 1px 1px white;
     cursor: grab;
 }
@@ -88,12 +90,15 @@ nav img {
     top: 20px;
 }
 
-nav ul, nav h1, nav li {
+nav ul,
+nav h1,
+nav li {
     display: inline-block;
 }
 
 nav h1 {
-    padding: 20px 20px 20px 80px; /* logo has fixed position; large left padding for h1 to avoid overlap */
+    padding: 20px 20px 20px 80px;
+    /* logo has fixed position; large left padding for h1 to avoid overlap */
     width: 40%;
     position: relative;
     color: white;
@@ -175,7 +180,7 @@ section:nth-child(even) {
 }
 
 section p {
-/*    margin-bottom: 30px;*/
+    /*    margin-bottom: 30px;*/
     margin: 20px 0 30px 5px;
 }
 
@@ -297,7 +302,8 @@ footer {
     margin-top: 80px;
 }
 
-footer .left a, .hideSmall {
+footer .left a,
+.hideSmall {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
@@ -312,7 +318,16 @@ footer * {
     display: inline-block;
 }
 
-.left, .right {
+footer img {
+    transform: rotate(10deg);
+}
+
+footer img:hover {
+    transform: rotate(0deg);
+}
+
+.left,
+.right {
     height: 60px;
 }
 
@@ -337,9 +352,10 @@ footer * {
 }
 
 /* Tooltip text */
+
 .tooltip .tooltiptext {
     visibility: hidden;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     font-size: .7em;
     color: #fff;
     text-align: center;
@@ -356,6 +372,7 @@ footer * {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
@@ -382,7 +399,8 @@ footer img {
 
 @media only screen and (max-width: 1300px) {
     footer img {
-        max-height: 30px; /* Starts to look a bit outsized as screen width decreases */
+        max-height: 30px;
+        /* Starts to look a bit outsized as screen width decreases */
     }
 }
 
@@ -407,12 +425,14 @@ footer img {
         font-size: 1.8em;
         top: 380px;
     }
-    .left, .right {
+    .left,
+    .right {
         width: 100%;
         text-align: left;
     }
     footer {
-        height: 130px;  /* Larger since now 2 lines */
+        height: 130px;
+        /* Larger since now 2 lines */
     }
 }
 
@@ -422,13 +442,14 @@ footer img {
     }
     nav h1 {
         padding-left: 0px;
-/*        width: 40%;*/
+        /*        width: 40%;*/
     }
     nav li a {
         font-size: .9em;
     }
     figure {
-        opacity: 1; /* for smaller screens, start w/ full opacity in case no mouse for hover effects */
+        opacity: 1;
+        /* for smaller screens, start w/ full opacity in case no mouse for hover effects */
     }
     .projectPic {
         opacity: 1;
@@ -443,7 +464,8 @@ footer img {
     }
 
     nav h1 {
-        padding: 10px 0 10px 45px; /* logo has fixed position; large left padding for h1 to avoid overlap */
+        padding: 10px 0 10px 45px;
+        /* logo has fixed position; large left padding for h1 to avoid overlap */
         line-height: 1;
         width: 100%;
     }
@@ -461,7 +483,8 @@ footer img {
         padding-left: 0;
     }
     h2 {
-        top: 300px; /* push higher - extra space for text wrapping */
+        top: 300px;
+        /* push higher - extra space for text wrapping */
     }
     h3 {
         font-size: 1.3em;
