@@ -159,6 +159,11 @@ h3 {
     color: #eeb651;
 }
 
+.standOutMore {
+    font-size: inherit;
+    color: #facf81;
+}
+
 main {
     position: relative;
     top: 440px;
