@@ -155,45 +155,100 @@ h3 {
 }
 
 @keyframes grander {
+    /*
     0% {
         color: white;
         text-shadow: 3px 3px #555;
-        font-weight: inherit;
     }
-    /*    25%  {background-color:yellow; left:200px; top:0px;}*/
-    50% {
+    60% {
         color: #eeb651;
         text-shadow: 3px 3px #555;
-        font-weight: inherit;
     }
-    75% {
+    80% {
         color: #faa306;
-        text-shadow: 1px 1px 3px white;
-        font-weight: 900;
+        text-shadow: 0 0 3px white;
     }
     100% {
         color: #eeb651;
         text-shadow: 3px 3px #555;
-        font-weight: inherit;
     }
-    /*
+*/
     from {
         color: white;
     }
     to {
         color: #eeb651;
     }
-*/
+}
+
+@keyframes grandest {
+    0% {
+        text-shadow: 3px 3px #555;
+        color: #eeb651;
+    }
+    40% {
+        text-shadow: 0 0 2px white;
+        color: #faa306;
+    }
+    60% {
+        text-shadow: 0 0 2px white;
+        color: #faa306;
+    }
+    100% {
+        text-shadow: 3px 3px #555;
+        color: #eeb651;
+    }
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5 {
+    font-size: inherit;
+    animation-name: grander;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.s1 {
+    animation-delay: 1s;
+}
+
+.s2 {
+    animation-delay: 2s;
+}
+
+.s3 {
+    animation-delay: 3.2s;
+}
+
+.s4 {
+    animation-delay: 4.4s;
+}
+
+.s5 {
+    animation-delay: 5.6s;
 }
 
 .standOut {
     font-size: inherit;
-    /*    color: #eeb651;*/
-    animation-name: grander;
-    animation-duration: 10s;
-    animation-delay: 2s;
+    animation-delay: 6.5s;
+    animation-name: grandest;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
+
+
+/*
+.standOut {
+        color: #eeb651;
+    animation-name: grander;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+*/
 
 /*
 .standOutMore {
