@@ -26,16 +26,18 @@ console.log(element, letters, letters[0]);
 //    //    }, 1000);
 //}
 
-let letterPointer = 0;
+let letterPointer = 0,
+    ratio = 2,
+    timer = 1000;
 let timeThis = setInterval(function () {
     newColor(letterPointer);
-    letterPointer = letterPointer === letters.length * 2 ? 0 : letterPointer + 1;
-}, 300);
+    letterPointer = letterPointer === letters.length * ratio ? 0 : letterPointer + 1;
+}, timer);
 
 function newColor(letterPointer) {
-    if (letterPointer % 2 === 0) {
-        element.innerHTML = element.innerHTML.replace(letters[letterPointer / 2], `<span class="standOutMore">${letters[letterPointer/2]}</span>`);
+    if (letterPointer % ratio === 0) {
+        element.innerHTML = element.innerHTML.replace(letters[letterPointer / ratio], `<span class="standOutMore">${letters[letterPointer/ratio]}</span>`);
     } else {
-        element.innerHTML = element.innerHTML.replace(`<span class="standOutMore">${letters[Math.floor(letterPointer/2)]}</span>`, letters[Math.floor(letterPointer / 2)]);
+        element.innerHTML = element.innerHTML.replace(`<span class="standOutMore">${letters[Math.floor(letterPointer/ratio)]}</span>`, letters[Math.floor(letterPointer / ratio)]);
     }
 }

@@ -154,15 +154,53 @@ h3 {
     margin-bottom: 30px;
 }
 
-.standOut {
-    font-size: inherit;
-    color: #eeb651;
+@keyframes grander {
+    0% {
+        color: white;
+        text-shadow: 3px 3px #555;
+        font-weight: inherit;
+    }
+    /*    25%  {background-color:yellow; left:200px; top:0px;}*/
+    50% {
+        color: #eeb651;
+        text-shadow: 3px 3px #555;
+        font-weight: inherit;
+    }
+    75% {
+        color: #faa306;
+        text-shadow: 1px 1px 3px white;
+        font-weight: 900;
+    }
+    100% {
+        color: #eeb651;
+        text-shadow: 3px 3px #555;
+        font-weight: inherit;
+    }
+    /*
+    from {
+        color: white;
+    }
+    to {
+        color: #eeb651;
+    }
+*/
 }
 
+.standOut {
+    font-size: inherit;
+    /*    color: #eeb651;*/
+    animation-name: grander;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+/*
 .standOutMore {
     font-size: inherit;
     color: #facf81;
 }
+*/
 
 main {
     position: relative;
