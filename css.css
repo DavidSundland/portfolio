@@ -155,47 +155,10 @@ h3 {
 }
 
 @keyframes grander {
-    /*
-    0% {
-        color: white;
-        text-shadow: 3px 3px #555;
-    }
-    60% {
-        color: #eeb651;
-        text-shadow: 3px 3px #555;
-    }
-    80% {
-        color: #faa306;
-        text-shadow: 0 0 3px white;
-    }
-    100% {
-        color: #eeb651;
-        text-shadow: 3px 3px #555;
-    }
-*/
     from {
         color: white;
     }
     to {
-        color: #eeb651;
-    }
-}
-
-@keyframes grandest {
-    0% {
-        text-shadow: 3px 3px #555;
-        color: #eeb651;
-    }
-    40% {
-        text-shadow: 0 0 2px white;
-        color: #faa306;
-    }
-    60% {
-        text-shadow: 0 0 2px white;
-        color: #faa306;
-    }
-    100% {
-        text-shadow: 3px 3px #555;
         color: #eeb651;
     }
 }
@@ -231,6 +194,25 @@ h3 {
     animation-delay: 5.6s;
 }
 
+@keyframes grandest {
+    0% {
+        text-shadow: 3px 3px #555;
+        color: #eeb651;
+    }
+    40% {
+        text-shadow: 0 0 2px white;
+        color: #faa306;
+    }
+    60% {
+        text-shadow: 0 0 2px white;
+        color: #faa306;
+    }
+    100% {
+        text-shadow: 3px 3px #555;
+        color: #eeb651;
+    }
+}
+
 .standOut {
     font-size: inherit;
     animation-delay: 6.5s;
@@ -238,24 +220,6 @@ h3 {
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
-
-
-/*
-.standOut {
-        color: #eeb651;
-    animation-name: grander;
-    animation-duration: 8s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-*/
-
-/*
-.standOutMore {
-    font-size: inherit;
-    color: #facf81;
-}
-*/
 
 main {
     position: relative;
