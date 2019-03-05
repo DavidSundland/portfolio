@@ -175,23 +175,24 @@ h3 {
 }
 
 .s1 {
-    animation-delay: 1s;
+    /* initial delay to ensure page loaded */
+    animation-delay: 6s;
 }
 
 .s2 {
-    animation-delay: 2s;
+    animation-delay: 7s;
 }
 
 .s3 {
-    animation-delay: 3.2s;
+    animation-delay: 8.2s;
 }
 
 .s4 {
-    animation-delay: 4.4s;
+    animation-delay: 9.4s;
 }
 
 .s5 {
-    animation-delay: 5.6s;
+    animation-delay: 10.6s;
 }
 
 @keyframes grandest {
@@ -215,7 +216,7 @@ h3 {
 
 .standOut {
     font-size: inherit;
-    animation-delay: 6.5s;
+    animation-delay: 11.5s;
     animation-name: grandest;
     animation-duration: 3s;
     animation-fill-mode: forwards;
